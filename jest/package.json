@@ -15,6 +15,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@types/jest": "^29.5.11"
+    "@types/jest": "^29.5.11",
+    "jest-cucumber": "^3.0.1"
   }
 }
