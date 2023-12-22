@@ -1,11 +1,22 @@
 const assert = require("assert");
-const { When, Then } = require("@cucumber/cucumber");
-const { Greeter } = require("../../src");
+const { When, Then, Given } = require("@cucumber/cucumber");
+const { Pessoa } = require("../../src/Pessoa");
 
-When("the greeter says hello", function () {
-  this.whatIHeard = new Greeter().sayHello();
+Given("que o segurança solicita a identidade do baladeiro", function () {
+  this.whatIHeard = new Pessoa();
 });
 
-Then("I should have heard {string}", function (expectedResponse) {
-  assert.equal(this.whatIHeard, expectedResponse);
-});
+When(
+  "ele informa a data de nascimento do baladeiro menor de idade",
+  function () {
+    this.whatIHeard = new Pessoa().ehMaiorDeIDade(17);
+    // return this.whatIHeard;
+  }
+);
+
+Then(
+  "o sistema deve retornar a mensagem {string}",
+  function (expectedResponse) {
+    assert.equal(this.whatIHeard, false);
+  }
+);

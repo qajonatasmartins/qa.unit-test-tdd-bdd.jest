@@ -30,6 +30,8 @@ BDD = Explicar base CTFL-AT https://bcr.bstqb.org.br/docs/syllabus_ctfl_at_1.0br
 
 Como (papel), eu quero (ação) e para (por quê).
 
+Configs do cucumber-js [cucumber-js](https://github.com/cucumber/cucumber-js/blob/main/docs/configuration.md)
+
 ```
 Feature: Verificação de Maioridade
 

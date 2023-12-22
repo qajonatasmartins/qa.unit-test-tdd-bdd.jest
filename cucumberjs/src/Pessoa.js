@@ -1,4 +1,4 @@
-export default class Pessoa {
+class Pessoa {
   // Tecnica de caixa-branca - cobertura de condição
   // Tecnica de caixa-preta - Analise de valor limite
   // CT = 17
@@ -8,3 +8,7 @@ export default class Pessoa {
     return idade >= 18;
   }
 }
+
+module.exports = {
+  Pessoa,
+};
